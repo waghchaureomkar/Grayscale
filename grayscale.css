@@ -1,0 +1,43 @@
+input {
+    cursor: pointer;
+  }
+
+canvas {
+    width: 100%;
+}
+.canStyle {
+    /* Specify only the width, or height, not both */
+    /* otherwise, it stretches the canvas */
+    width: 49%;
+    border-style: ridge;
+    border-width: 4pt;
+    /* Crayola Crayons - Coconut */
+    border-color: #fefefe;
+}
+
+
+
+.social-footer {
+  padding: 1rem;
+  background: $dark-gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .social-footer-icons {
+    li:last-of-type {
+      margin-right: 0;
+    }
+
+    .fa {
+      font-size: 1.3rem;
+      color: $white;
+
+      &:hover {
+        color: darken($dark-gray, 25%);
+        transition: color 0.3s ease-in;
+      }
+    }
+  }
+}
+
